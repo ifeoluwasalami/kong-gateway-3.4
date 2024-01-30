@@ -1,6 +1,6 @@
-# kong342-wallarm
+# kong34-wallarm
 
-Docker image with Kong 3.4.2-ubuntu and Wallarm 4.8.6
+Docker image with Kong-gateway 3.4-ubuntu and Wallarm 4.8.6
 
 Example of execution:
 ```
@@ -22,5 +22,5 @@ docker run -it --rm --name kong \
     -p 8443:8443 \
     -p 8001:8001 \
     -p 8444:8444 \
-    jnfrick/kong342-wallarm:latest
+    wallarm/kong-gateway-wallarm:3.4
 ```
