@@ -31,15 +31,15 @@ http {
       allow 127.0.0.0/8;
       deny all;
 
-      #wallarm_mode off;
-      #disable_acl "on";
+      wallarm_mode off;
+      disable_acl "on";
       access_log off;
 
       location ~/wallarm-status$ {
        # wallarm_status on;
       }
     }
-    #disable_acl "on";
+    disable_acl "on";
     include 'nginx-kong.conf';
 }
 > end
